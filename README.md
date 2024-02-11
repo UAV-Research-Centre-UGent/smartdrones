@@ -15,10 +15,7 @@ Our system has three key parts: 1) The Autonomous Navigation Block (ANB) for sel
 ### Build the drone
 Choose the right frame for your project. Each frame comes with recommended components, but keep in mind that not all suggested parts might be available or exactly the same. The key is to ensure that the components you select serve the same purpose or function. The folder with available frames is located in [/frames](). This folder contains the files for cutting the parts in carbon fiber and 3D parts that should be printed in TPU (or similar flexible filament) and PETG (or similar filament). It also provides the pins used for soldering the connections. Below is an overview of the pin connections of all the components.
 
-<div style="text-align: center;">
-    <img src="images/connections.png">
-</div>
-
+![Connections](images/connections.png)
 
 ### Configure the drone
 After installing iNAV on the flight controller, it needs to be set up correctly. The setup can vary based on the components and ports (pins) chosen on the flight controller. You'll find a document named setup.docx in the frame's folder, which explains the flight controller's configuration in detail. Below, we provide an overview of the general configuration process.

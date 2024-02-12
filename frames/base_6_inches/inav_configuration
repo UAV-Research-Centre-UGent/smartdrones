@@ -1,0 +1,184 @@
+# diff
+
+# version
+# INAV/FLYWOOF745 4.1.0 Feb 11 2022 / 10:03:34 (611d26f4)
+# GCC-10.2.1 20201103 (release)
+
+# start the command batch
+batch start
+
+# resources
+
+# mixer
+
+mmix reset
+
+mmix 0  1.000  1.000  1.000  1.000
+mmix 1  1.000  1.000 -1.000 -1.000
+mmix 2  1.000 -1.000  1.000 -1.000
+mmix 3  1.000 -1.000 -1.000  1.000
+
+# servo mix
+
+# servo
+
+# safehome
+
+# logic
+
+# gvar
+
+# pid
+
+# feature
+feature -AIRMODE
+feature BAT_PROF_AUTOSWITCH
+feature CURRENT_METER
+feature LED_STRIP
+feature PWM_OUTPUT_ENABLE
+
+# beeper
+
+# blackbox
+blackbox -NAV_ACC
+blackbox NAV_POS
+blackbox NAV_PID
+blackbox MAG
+blackbox ACC
+blackbox ATTI
+blackbox RC_DATA
+blackbox RC_COMMAND
+blackbox MOTORS
+
+# map
+map TEAR
+
+# serial
+serial 0 0 115200 115200 0 115200
+serial 1 64 115200 115200 0 115200
+serial 2 1 9600 115200 0 115200
+serial 3 32 115200 115200 0 115200
+serial 4 1 115200 115200 0 115200
+serial 5 2 115200 57600 0 115200
+
+# led
+led 0 6,5::L:2
+led 1 6,7::CBW:5
+led 2 8,7::CBW:5
+led 3 8,5::L:2
+
+# color
+
+# mode_color
+
+# aux
+aux 0 0 0 1525 2100
+aux 1 1 1 900 2100
+aux 2 11 1 1875 2100
+aux 3 3 1 900 2100
+aux 4 29 0 1375 2100
+aux 5 33 1 1375 2100
+aux 6 13 2 1900 2100
+
+# adjrange
+
+# rxrange
+
+# temp_sensor
+
+# wp
+#wp 0 invalid
+
+# osd_layout
+
+# master
+set looptime = 500
+set gyro_main_lpf_hz = 90
+set gyro_main_lpf_type = PT1
+set dynamic_gyro_notch_q = 250
+set dynamic_gyro_notch_min_hz = 120
+set setpoint_kalman_q = 200
+set acc_hardware = MPU6000
+set acczero_x = 20
+set acczero_y = 23
+set acczero_z = 34
+set accgain_x = 4099
+set accgain_y = 4070
+set accgain_z = 4019
+set rangefinder_hardware = MSP
+set opflow_hardware = MSP
+set opflow_scale =  9.340
+set align_mag = CW270FLIP
+set mag_hardware = QMC5883
+set magzero_x = 60
+set magzero_y = -72
+set magzero_z = -10
+set maggain_x = 1432
+set maggain_y = 1390
+set maggain_z = 1442
+set align_mag_pitch = 1800
+set align_mag_yaw = 2700
+set baro_hardware = BMP280
+set blackbox_rate_denom = 2
+set motor_pwm_protocol = DSHOT300
+set failsafe_procedure = DROP
+set align_board_roll = 1806
+set align_board_pitch = 14
+set model_preview_type = 3
+set applied_defaults = 2
+set rpm_gyro_filter_enabled = ON
+set rpm_gyro_min_hz = 75
+set airmode_type = THROTTLE_THRESHOLD
+set inav_allow_dead_reckoning = ON
+set nav_user_control_mode = CRUISE
+set nav_auto_speed = 200
+set nav_max_auto_speed = 200
+set nav_manual_speed = 200
+set smartport_fuel_unit = PERCENT
+set debug_mode = FLOW_RAW
+set name = DRONEDROID 01
+
+# profile
+profile 1
+
+set mc_p_pitch = 95
+set mc_i_pitch = 75
+set mc_d_pitch = 63
+set mc_p_roll = 90
+set mc_i_roll = 60
+set mc_d_roll = 60
+set mc_p_yaw = 30
+set mc_i_yaw = 80
+set dterm_lpf_hz = 90
+set dterm_lpf_type = PT3
+set heading_hold_rate_limit = 45
+set nav_mc_pos_z_p = 70
+set nav_mc_vel_z_p = 120
+set nav_mc_vel_z_i = 100
+set nav_mc_vel_z_d = 50
+set nav_mc_pos_xy_p = 80
+set nav_mc_vel_xy_p = 50
+set nav_mc_vel_xy_i = 40
+set nav_mc_vel_xy_d = 60
+set d_boost_max =  1.500
+set antigravity_gain =  2.000
+set antigravity_accelerator =  5.000
+set smith_predictor_delay =  1.500
+set tpa_rate = 20
+set tpa_breakpoint = 1200
+set rc_expo = 0
+set rc_yaw_expo = 0
+set roll_rate = 80
+set pitch_rate = 80
+set manual_rc_expo = 0
+set manual_rc_yaw_expo = 0
+
+# battery_profile
+battery_profile 1
+
+set battery_capacity = 2000
+set battery_capacity_warning = 500
+set throttle_idle =  4.000
+
+# end the command batch
+batch end
